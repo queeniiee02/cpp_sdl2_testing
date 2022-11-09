@@ -16,8 +16,9 @@ include_directories(${SDL2_INCLUDE_DIRS} ${SDL2_IMAGE_INCLUDE_DIRS})
  include_directories(${SDL_H} ${SDL_H_IMAGE})
  
  set(SDL_LIB /opt/homebrew/Cellar/sdl2/2.24.2/lib/libSDL2-2.0.0.dylib)
- set(SDL_IMAGE_LIB /opt/homebrew/Cellar/sdl2/2.24.2/lib/libSDL2-2.0.0.dylib)
+ set(SDL_IMAGE_LIB /opt/homebrew/Cellar/sdl2_image/2.6.2/lib/libSDL2_image-2.0.0.dylib)
  link_libraries(${SDL_LIB} ${SDL_IMAGE_LIB})
 
 add_executable(cpp_sdl2 src/main.cpp)
+add_executable(cpp_sdl2_gog src/gog.cpp)
 target_link_libraries(cpp_sdl2 ${SDL2_LIBRARIES} ${SDL2_IMAGE_INCLUDE_DIRS} ${SDL_IMAGE_LIB})
