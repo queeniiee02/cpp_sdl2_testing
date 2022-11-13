@@ -22,7 +22,7 @@ set(SDL_H_IMAGE /opt/homebrew/Cellar/sdl2_image/2.6.2/include)
 set(SDL_H_MIXER /opt/homebrew/Cellar/sdl2_mixer/2.6.2/include)
 set(SDL_H_MIXER /opt/homebrew/Cellar/sdl2_ttf/2.20.1/include)
  
-include_directories(${SDL_H} ${SDL_H_IMAGE} ${SDL_H_MIXER})
+include_directories(${SDL_H} ${SDL_H_IMAGE} ${SDL_H_MIXER} ${SDL_H_TTF})
 
 set(SDL_LIB /opt/homebrew/Cellar/sdl2/2.24.2/lib/libSDL2-2.0.0.dylib)
 set(SDL_IMAGE_LIB /opt/homebrew/Cellar/sdl2_image/2.6.2/lib/libSDL2_image-2.0.0.dylib)
